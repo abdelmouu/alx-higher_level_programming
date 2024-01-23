@@ -1,3 +1,3 @@
 #!/bin/usr/python3
-class square:
+class Square:
     pass
