@@ -12,7 +12,6 @@ def check(queen, column):
             return False
         if abs(queen[i] - queen[column]) == abs(i - column):
             return False
-    
     return True
 
 
