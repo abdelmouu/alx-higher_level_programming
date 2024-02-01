@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" resolving nqueen problem. """
+""" resolving nqueens problem. """
 
 
 def check(queen, column):
