@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" resving N queen problems """
+""" resolving nqueen problem. """
 
 
 def check(queen, column):
-    """ 
-    this function checks if the position of each 
-    queen is valid 
+    """
+    this function checks if the position of each
+    queen is valid
     """
     for i in range(column):
         if queen[i] == queen[column]:
@@ -35,7 +35,7 @@ def fulling(queen, column):
 
     queen[column] = -1
 
-    while(queen[column] < tam - 1 or exito == 1):
+    while (queen[column] < tam - 1 or exito == 1):
         queen[column] = queen[column] + 1
         if check(queen, column) is True:
             if column != tam:
