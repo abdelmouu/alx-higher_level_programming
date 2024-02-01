@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ resolving nqueens problem. """
 
+import sys
+
 
 def check(queen, column):
     """
