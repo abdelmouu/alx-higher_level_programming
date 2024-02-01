@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-""" resolving nqueens problem. """
-
-import sys
+"""
+Resolve NQUEEN Problem
+"""
 
 
 def check(queen, column):
     """
-    this function checks if the position of each
-    queen is valid
+    function that checks if the position of each queen is valid
     """
     for i in range(column):
         if queen[i] == queen[column]:
