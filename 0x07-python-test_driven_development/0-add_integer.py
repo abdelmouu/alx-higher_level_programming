@@ -23,4 +23,4 @@ def add_integer(a, b=98):
         a = int(a)
     if type(b) is float:
         b = int(b)
-    return(a + b)
+    return (a + b)
