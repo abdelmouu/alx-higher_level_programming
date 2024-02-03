@@ -95,4 +95,4 @@ def matrix_mul(m_a, m_b):
             res = 0
         new.append(n1)
         n1 = []
-    return(new)
+    return (new)
