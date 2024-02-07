@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+it checks if the object is an instance of a class that
+was inherited from the specified class or not.
+"""
+
+
 def inherits_from(obj, a_class):
     """
     Args:
