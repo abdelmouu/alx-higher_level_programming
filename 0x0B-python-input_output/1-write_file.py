@@ -4,10 +4,7 @@ This module defines a file-writing function.
 """
 
 
-def number_of_lines(filename=""):
+def write_file(filename="", text=""):
     """Writes a string to a UTF8 text file"""
-    sum = 0
-    with open(filename) as fd:
-        for line in fd:
-            sum += 1
-    return (sum)
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
