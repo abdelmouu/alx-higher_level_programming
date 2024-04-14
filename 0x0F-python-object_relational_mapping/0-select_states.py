@@ -9,10 +9,10 @@ from sys import argv
 
 if __name__ == '__main__':
     """
-	Main entry point of the script.
-	Connects to the MySQL database and retrieves
-	the states from the `states` table.
-	"""
+    Main entry point of the script.
+    Connects to the MySQL database and retrieves
+    the states from the `states` table.
+    """
     db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
                          passwd=argv[2], db=argv[3])
 
