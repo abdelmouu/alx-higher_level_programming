@@ -1,4 +1,5 @@
 #!/bin/bash
+# Makes a request that causes the server to respond with "You got me!"
+curl -s -X GET 0.0.0.0:5000/catch_me -L -w "%{http_code}" -o /dev/null | grep -Eq "^200$"
+curl -s -X GET 0.0.0.0:5000/catch_me
 
-# Send a POST request to the catch_me endpoint with a specific user-agent header
-curl -s -X POST -H "User-Agent: I am a hacker" "http://0.0.0.0:5000/catch_me"
