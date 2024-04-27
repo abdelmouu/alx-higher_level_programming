@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Sends a POST request to a given URL with an email as a parameter and displays the
-response body
+Sends a POST request to a given URL with an email as a parameter
+and displays the response body
 """
 import urllib.request
 import urllib.parse
