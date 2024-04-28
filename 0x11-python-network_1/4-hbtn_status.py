@@ -2,6 +2,8 @@
 """Fetches the URL: https://intranet.hbtn.io/status
 with `requests` module
 """
+import requests
+
 if __name__ == "__main__":
     r = requests.get("https://alx-intranet.hbtn.io/status")
     print("Body response:")
