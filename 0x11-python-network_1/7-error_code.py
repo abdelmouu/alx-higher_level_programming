@@ -3,7 +3,7 @@
 Usage: ./7-error_code.py <URL>
   - Handles HTTP errors.
 """
-import sys
+import sys import argv
 import requests
 
 if __name__ == "__main__":
