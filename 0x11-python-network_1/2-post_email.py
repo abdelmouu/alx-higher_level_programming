@@ -3,22 +3,18 @@
 Sends a POST request to a given URL with an email as a parameter
 and displays the response body
 """
-import urllib.request
-import urllib.parse
-import sys
 
 
-if len(sys.argv) > 2:
-    url = sys.argv[1]
-    email = sys.argv[2]
-else:
-    print('Usage: {} <url> <email>'.format(sys.argv[0]))
-    sys.exit(1)
+from sys import argv
+from urllib.request import Request, urlopen
+from urllib.parse import urlencode
 
-params = urllib.parse.urlencode({'email': email})
-url_with_params = '{}?{}'.format(url, params)
 
-with urllib.request.urlopen(url_with_params, data=None) as response:
-    body = response.read()
+if __name__ == "__main__":
+    data = urlencode({
+                        'email': argv[2]
+                    }).encode('ascii')
+    req = Request(argv[1], data)
 
-print(body.decode('utf-8'))
+    with urlopen(req) as res:
+        print(res.read().decode('utf-8'))
